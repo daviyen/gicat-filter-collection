@@ -1,0 +1,56 @@
+{
+	"packageName": "Fortran Basics Filter Package",
+	"authors": "David H.",
+	"desc": "This package provides some basic filters for the Fortran90 programming language. These filters however might work for different Fortran versions without any guarantees.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Subroutine Filter",
+			"regex": "/.*\\ssubroutine\\s(.+\\s?)\\(/gm",
+			"id": "subroutineFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f90",
+			"attributes": {
+				"subroutine": [
+					1
+				]
+			},
+			"style": {
+				"color": "#00B090"
+			},
+			"failures": [
+				""
+			],
+			"label": "Subroutine",
+			"labelAttribute": "subroutine"
+		},
+		{
+			"name": "Recursive function Filter",
+			"regex": "/recursive\\sfunction\\s(\\w+)\\s?\\(/gm",
+			"id": "recursiveFuntionFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f90",
+			"attributes": {
+				"recursive": [
+					1
+				]
+			},
+			"style": {
+				"color": "#9E5EC4"
+			},
+			"failures": [
+				""
+			],
+			"label": "Recursive",
+			"labelAttribute": "recursive"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

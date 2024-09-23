@@ -1,0 +1,59 @@
+{
+	"packageName": "SML Basics Filter Package",
+	"authors": "David H.",
+	"desc": "A collection of multiple Filters of the scala programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Object Filter",
+			"regex": "/object\\s?(\\w+)/gm",
+			"id": "objectFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".scala",
+			"attributes": {
+				"object": [
+					1
+				]
+			},
+			"style": {
+				"color": "#00B090"
+			},
+			"failures": [
+				""
+			],
+			"label": "Object",
+			"labelAttribute": "object"
+		},
+		{
+			"name": "Definition Filter",
+			"regex": "/def\\s(\\w+):\\s(\\w+)\\s?=/gm",
+			"id": "definitionFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".scala",
+			"attributes": {
+				"definition": [
+					1
+				],
+                "type": [
+                    2
+                ]
+			},
+			"style": {
+				"color": "#9E5EC4"
+			},
+			"failures": [
+				""
+			],
+			"label": "def",
+			"labelAttribute": "definition"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"packageName": "SML Basics Filter Package",
+	"authors": "David H.",
+	"desc": "A collection of multiple Filters to visualize some basic code structures of the SML programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Signature Filter",
+			"regex": "/signature\\s(\\w+)/gm",
+			"id": "signatureFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".sig",
+			"attributes": {
+				"signature": [
+					1
+				]
+			},
+			"style": {
+				"color": "#00B090"
+			},
+			"failures": [
+				""
+			],
+			"label": "Signature",
+			"labelAttribute": "signature"
+		},
+		{
+			"name": "Structure Filter",
+			"regex": "/structure\\s(\\w+)\\s:>\\s.*\\s?=/gm",
+			"id": "structureFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".sml",
+			"attributes": {
+				"structure": [
+					1
+				]
+			},
+			"style": {
+				"color": "#9E5EC4"
+			},
+			"failures": [
+				""
+			],
+			"label": "Structure",
+			"labelAttribute": "structure"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"packageName": "OCaml Basics Filter Package",
+	"authors": "David H.",
+	"desc": "A collection of multiple Filters of the OCaml programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Module import Filter",
+			"regex": "/module\\s(\\S+)\\s*=\\s*(\\S+)/gm",
+			"id": "moduleimportFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".ml",
+			"attributes": {
+                "moduleName": [2]
+			},
+			"style": {
+				"color": "#00B090"
+			},
+			"failures": [
+				""
+			],
+			"label": "Module",
+			"labelAttribute": "moduleName"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

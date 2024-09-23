@@ -1,0 +1,52 @@
+{
+	"packageName": "C++ Basics Filter Package",
+	"authors": "David H.",
+	"desc": "A collection of multiple Filters to visualize some basic code structures of the C++ programming language. This filter works for file with the .cpp ending. If your files use a different ending, adjust the extension attribute accordingly.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Include Filter",
+			"regex": "/#include\\s(\\S+)\\s*\\n*/gm",
+			"id": "includeFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".cpp",
+			"attributes": {
+				"includeName": [1]
+			},
+			"style": {
+				"color": "#00B090"
+			},
+			"failures": [
+				""
+			],
+			"label": "Include",
+			"labelAttribute": "includeName"
+		},
+		{
+			"name": "Structure Filter",
+			"regex": "/struct (\\S+)\\s*\\n*/gm",
+			"id": "structureFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".cpp",
+			"attributes": {
+				"structureName": [1]
+			},
+			"style": {
+				"color": "#9E5EC4"
+			},
+			"failures": [
+				""
+			],
+			"label": "Structure",
+			"labelAttribute": "structureName"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"packageName": "C# Basics Filter Package",
+	"authors": "David H.",
+	"desc": "A simple filter package to visualize some features of the C# programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Class Filter no inheritance",
+			"regex": "/class\\s+(\\S+)\\s*\\(/gm",
+			"id": "classFilternoinheritance",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".cs",
+			"attributes": {
+				"className": [
+					1
+				]
+			},
+			"style": {
+				"color": "#00B090"
+			},
+			"failures": [
+				""
+			],
+			"label": "Class",
+			"labelAttribute": "className"
+		},
+        {
+			"name": "Extensions Filter",
+			"regex": "/using\\s(\\S+)\\s*;/gm",
+			"id": "extensionsFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".cs",
+			"attributes": {
+				"extensionName": [
+					1
+				]
+			},
+			"style": {
+				"color": "#9E5EC4"
+			},
+			"failures": [
+				""
+			],
+			"label": "Using",
+			"labelAttribute": "extensionName"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

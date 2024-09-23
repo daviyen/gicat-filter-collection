@@ -1,0 +1,32 @@
+{
+	"packageName": "C Include Filter",
+	"authors": "David H.",
+	"desc": "This is a simple filter listing all included modules of a file in the C language.",
+	"date": "2024-05-27T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "C Include Filter",
+			"regex": "/\\#include\\s(.*)/gm",
+			"id": "Cincludefilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".c",
+			"attributes": {
+				"Include": [
+					1
+				]
+			},
+			"style": {
+				"color": "#8ebae5"
+			},
+			"failures": [
+				""
+			],
+			"label": "Include",
+			"labelAttribute": "Include"
+		}
+	],
+	"edgeFilterList": []
+}

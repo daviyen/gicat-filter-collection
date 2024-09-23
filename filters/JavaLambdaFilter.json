@@ -1,0 +1,32 @@
+{
+	"packageName": "Java Lambda Filter",
+	"authors": "David H.",
+	"desc": "A simple filter for filtering lambda expressions in Java.",
+	"date": "2024-05-27T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Lambda Filter",
+			"regex": "/(\\([\\w\\d,\\s]*\\))\\s->/gm",
+			"id": "lambdafilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".java",
+			"attributes": {
+				"Lambda": [
+					1
+				]
+			},
+			"style": {
+				"color": "#00B090"
+			},
+			"failures": [
+				""
+			],
+			"label": "Lambda",
+			"labelAttribute": "Lambda"
+		}
+	],
+	"edgeFilterList": []
+}

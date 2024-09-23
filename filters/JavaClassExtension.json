@@ -1,0 +1,55 @@
+{
+	"packageName": "Java Class Extension Filter",
+	"authors": "David H.",
+	"desc": "A simple filter to visualize class extensions in Java.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Java Class Extension Filter",
+			"regex": "/class\\s(\\w+)\\sextends\\s(\\w+)\\s?\\{/gm",
+			"id": "javaClassExtensionFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".java",
+			"attributes": {
+				"className": [
+					1
+				],
+				"extends": [
+					2
+				]
+			},
+			"style": {
+				"color": "#00B090"
+			},
+			"failures": [
+				""
+			],
+			"label": "Class",
+			"labelAttribute": "className"
+		}
+	],
+	"edgeFilterList": [
+		{
+			"allow-loop": true,
+			"mode": "contains",
+			"label": "extends",
+			"spec": "edge",
+			"name": "Class Extension Edge Filter Java",
+			"id": "classExtensionEdgeFilter",
+			"from": {
+				"nodeFilterID": "javaClassExtensionFilter",
+				"attribute": "extends"
+			},
+			"to": {
+                "nodeFilterID": "javaClassExtensionFilter",
+                "attribute": "className"
+            },
+            "style":{
+                "color": "#ff00ff"
+        	}
+		}
+	]
+}
