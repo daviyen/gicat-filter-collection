@@ -22,7 +22,7 @@
 				]
 			},
 			"style": {
-				"color": "#00B090"
+				"color": "#6461F9"
 			},
 			"failures": [
 				""
@@ -48,7 +48,7 @@
                 "attribute": "className"
             },
             "style":{
-                "color": "#ff00ff"
+                "color": "#F76262"
         	}
 		}
 	]

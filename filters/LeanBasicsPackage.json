@@ -15,7 +15,7 @@
 				"moduleName": [1]
 			},
 			"style": {
-				"color": "#00B090"
+				"color": "#6461F9"
 			},
 			"failures": [""],
 			"label": "Import",
@@ -32,7 +32,7 @@
 				"structureName": [1]
 			},
 			"style": {
-				"color": "#9E5EC4"
+				"color": "#F76262"
 			},
 			"failures": [""],
 			"label": "Structure",
