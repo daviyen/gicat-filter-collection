@@ -1,6 +1,6 @@
 {
 	"packageName": "Basic Lean filter package",
-	"authors": "David H., Frederic K.",
+	"authors": "David H.",
 	"desc": "This package provides some basic filters for the Lean programming language.",
 	"date": "2024-01-31T16:44:59.958Z",
 	"nodeFilterList": [
@@ -23,7 +23,7 @@
 		},
 		{
 			"name": "Structure Filter",
-			"regex": "/structure\\s+(\\S+)\\s+/gm",
+			"regex": "/structure\\s+(\\S+)\\s+where\\s*/gm",
 			"id": "structureFilter",
 			"spec": "node",
 			"exclude": [""],

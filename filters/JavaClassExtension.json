@@ -6,7 +6,7 @@
 	"nodeFilterList": [
 		{
 			"name": "Java Class Extension Filter",
-			"regex": "/class\\s(\\w+)\\sextends\\s(\\w+)\\s?\\{/gm",
+			"regex": "/(?<!\\*[\\w\\s]*)class\\s(\\w+)(\\sextends\\s(\\w+))?\\s?/gm",
 			"id": "javaClassExtensionFilter",
 			"spec": "node",
 			"exclude": [
@@ -18,7 +18,7 @@
 					1
 				],
 				"extends": [
-					2
+					3
 				]
 			},
 			"style": {
